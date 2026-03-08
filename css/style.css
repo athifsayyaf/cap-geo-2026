@@ -873,8 +873,62 @@ ul { list-style: none; }
   margin-top: 6px;
 }
 
-.activity-dot.blue { background: var(--navy); }
-.activity-dot.teal { background: var(--teal); }
+.activity-dot.blue  { background: var(--navy); }
+.activity-dot.teal  { background: var(--teal); }
+.activity-dot.gold  { background: var(--gold); }
+.activity-dot.navy  { background: #2c3e6b; }
+.activity-dot.insar { background: #6c35a8; }
+
+/* ── Session sub-blocks (Morning / Afternoon / Industry / Field) ── */
+.session-block {
+  margin-bottom: 14px;
+}
+.session-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.session-label.morning   { background: rgba(14,140,122,.12); color: var(--teal); }
+.session-label.afternoon { background: rgba(13,27,62,.10);   color: var(--navy); }
+.session-label.industry  { background: rgba(200,153,58,.15); color: #8a6210; margin-top: 10px; }
+.session-label.field     { background: rgba(108,53,168,.12); color: #6c35a8; margin-top: 10px; }
+
+/* Speaker org tag inline */
+.speaker-org {
+  font-weight: 500;
+  color: var(--text-light);
+  font-size: .85em;
+}
+
+/* ── Association banner in About section ── */
+.assoc-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 8px 18px;
+  background: rgba(14,140,122,.08);
+  border: 1px solid rgba(14,140,122,.22);
+  border-radius: 30px;
+  font-size: .88rem;
+  color: var(--text-light);
+}
+.assoc-banner svg {
+  width: 16px;
+  height: 16px;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+.assoc-banner strong {
+  color: var(--navy);
+}
 
 .day-activities strong {
   display: block;
